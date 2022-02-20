@@ -29,8 +29,10 @@ pow(2,4) = 16
 
 
 function pow(x,n){
-    // Write you logic here.
-    return;
+    if(n==0){
+        return 1;
+    }
+    return x*pow(x,n-1);
 }
 
 /* The Fibonacci Series is a numeric series starting with the integers 0 and 1. In this series,
@@ -43,8 +45,10 @@ Write a function that take n as parameter and return the nth element in the Fibo
 Example: n = 4 ==> 3, n= 0 ==> 0, n = 3 ==> 2 */
 
 function fibonacci(n){
-    // Write you logic here.
-    return;
+    if(n<2){
+        return n;
+    }
+    return fibonacci(n-2)+fibonacci(n-1);
 }
 
 /* Optional 
